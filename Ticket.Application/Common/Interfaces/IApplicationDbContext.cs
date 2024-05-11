@@ -6,6 +6,7 @@ namespace Ticket.Application.Common.Interfaces
 {
     public interface IApplicationDbContext
     {
+        DbSet<User> Users { get; }
         DbSet<ApplicationUser> ApplicationUsers { get; }
         DbSet<Contact> Contacts { get; }
         DbSet<Customer> Customers { get; }
